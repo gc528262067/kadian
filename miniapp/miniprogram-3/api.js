@@ -1,4 +1,5 @@
-const siteinfo = require('./siteinfo.js');
+const siteinfo = require('./siteinfo.js')
+let a = 1;
 module.exports = {
   wxlogin:siteinfo.webroot+"user/wxlogin",// 微信登录
   getType1:siteinfo.webroot+"user/getType1",// 微信登录

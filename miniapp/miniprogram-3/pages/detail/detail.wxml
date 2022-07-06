@@ -1,0 +1,4 @@
+<view style="padding:30rpx; overflow:scroll;">
+<wxParse nodes="{{ content }}" />
+<van-button type="primary" block wx:if="{{show == 1}}" bindtap="edit" data-id="{{id}}">编辑</van-button>
+</view>

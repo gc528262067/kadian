@@ -1,0 +1,10 @@
+<view style="width: 100vw; height: 100vh; background-color: #f5f5f5;">
+<van-grid column-num="4">
+  <block wx:for="{{type1List}}">
+  <van-grid-item bindlongtap="del" icon="search" text="{{item.name}}" badge="{{item.nums}}" bindtap="type3" data-pid="{{item.id}}" />
+</block>
+</van-grid>
+<view style="position: fixed; bottom: 0px; width: 100%;">
+  <van-button icon="star-o" type="primary" block bindtap="addType" data-pid="{{pid}}">添加分类</van-button>
+</view>
+</view>

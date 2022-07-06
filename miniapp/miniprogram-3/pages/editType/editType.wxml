@@ -1,0 +1,19 @@
+<view style="width: 100vw; height: 100vh; background-color: #f5f5f5;">
+<view>
+  <van-cell-group>
+  <van-field
+    value="{{ typeName }}"
+    required
+    clearable
+    label="分类名"
+    icon="question-o"
+    placeholder="分类名"
+    bind:click-icon="onClickIcon"
+    bind:input='input'
+  />
+</van-cell-group>
+</view>
+<van-button type="primary" block bindtap="edit">提交</van-button>
+</view>
+<!-- 在页面内添加对应的节点 -->
+<van-notify id="van-notify" />
